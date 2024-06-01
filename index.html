@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GMK Slipper Authorisation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="70da5cd1-826f-4af8-8730-ed7e4f29e6c2"
+          />
+
+          <h1 class="h1border">
+            <em>GMK's</em> slipper slave <br />Slipper Authorisation
+          </h1>
+          <br />
+          <div class="form-group">
+            <img src="images/PinkUggs.jpg" alt="Pink Uggs" />
+            <input
+              type="radio"
+              name="type"
+              id="rad1"
+              value="Pink Uggs wear privileges have been granted by Goddess Miss Kelly."
+            />
+            <label for="rad1">Privileges Granted</label>
+          </div>
+
+          <br /><br />
+          <div class="form-group">
+            <img src="images/BigPurpleSlippers.jpg" alt="Big Purple Slippers" />
+            <input
+              type="radio"
+              name="type"
+              id="rad2"
+              value="Big Purple Slippers wear privileges have been granted by Goddess Miss
+          Kelly until further notice."
+            />
+            <label for="rad2">Privileges Granted</label>
+          </div>
+
+          <br /><br />
+          <div class="form-group">
+            <img src="images/NoSlippers.jpg" alt="No Slippers" />
+            <input
+              type="radio"
+              name="type"
+              id="rad3"
+              value="All Slipper Privileges Revoked by Goddess Miss Kelly until further
+          notice."
+            />
+            <label for="rad3">Privileges Revoked</label>
+          </div>
+
+          <br /><br />
+          <div class="form-group">
+            <label for="instructions">Goddess Miss Kelly's Instructions</label>
+            <br />
+            <textarea
+              class="textarea"
+              id="instructions"
+              name="instructions"
+              rows="4"
+              cols="50"
+            ></textarea>
+          </div>
+
+          <br />
+          <div class="form">
+            <input class="button" type="submit" value="E-Mail slippers" />
+          </div>
+
+          <br /><br /><br />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
