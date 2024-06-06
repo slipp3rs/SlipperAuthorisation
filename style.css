@@ -28,6 +28,10 @@ section{
 
 }
 
+.version{
+  font-size: x-small;
+}
+
 .form-group{
   font-size: 20px;
 }
