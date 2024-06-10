@@ -3,104 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GMK Slipper Authorisation</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Slipper Authorisation</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-
   <body>
-    <section>
-      <div class="container">
-        <form action="https://api.web3forms.com/submit" method="POST">
-          <input
-            type="hidden"
-            name="access_key"
-            value="70da5cd1-826f-4af8-8730-ed7e4f29e6c2"
-          />
+    <div class="headers">
+      <h1 class="h1style">Goddess Miss Kelly's</h1>
+      <h2 class="h2style">Slipper Authorisation</h2>
+    </div>
 
-          <h1 class="h1border">
-            <em>GMK's</em> slipper slave <br />Slipper Authorisation
-          </h1>
-          <br />
-          <div class="form-group">
-            <img src="images/PinkUggs.jpg" alt="Pink Uggs" />
+    <div class="container">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="70da5cd1-826f-4af8-8730-ed7e4f29e6c2"
+        />
+        <!-- start of Flex frame for images -->
+        <div class="slipper-gallery">
+          <button type="button" class="button">
+            <img src="images/BigPurpleSlippers.jpg" alt="" />
+          </button>
+
+          <button type="button" class="button">
+            <img src="images/No4.png" alt="" />
+          </button>
+
+          <button type="button" class="button">
+            <img src="images/UggSlippersCorrectSize.jpg" alt="" />
+          </button>
+        </div>
+        <!-- End of Flex frame for images -->
+
+        <!-- start of Flex frame for RadioButtons -->
+        <div class="radiobutton">
+          <button type="button" class="button">
             <input
               type="radio"
               name="Message from your Goddess"
               id="rad1"
-              value="Pink Uggs: Wear privileges have been granted by Goddess Miss Kelly."
+              value="Big Purple Slippers: Wear privileges have been granted by Goddess Miss Kelly."
             />
-            <label for="rad1">Privileges Granted</label>
-          </div>
+            <label for="rad1">Granted</label>
+          </button>
 
-          <br /><br />
-          <div class="form-group">
-            <img src="images/BigPurpleSlippers.jpg" alt="Big Purple Slippers" />
+          <button type="button" class="button">
             <input
               type="radio"
               name="Message from your Goddess"
               id="rad2"
-              value="Big Purple Slippers: Wear privileges have been granted by Goddess Miss
-          Kelly."
+              value="All Slipper Privileges have been revoked by Goddess Miss Kelly."
             />
-            <label for="rad2">Privileges Granted</label>
-          </div>
+            <label for="rad2">Revoked</label>
+          </button>
 
-          <br /><br />
-          <div class="form-group">
-            <img src="images/NoSlippers.jpg" alt="No Slippers" />
+          <button type="button" class="button">
             <input
               type="radio"
               name="Message from your Goddess"
               id="rad3"
-              value="All Slipper Privileges have been revoked by Goddess Miss Kelly."
+              value="Pink Uggs: Wear privileges have been granted by Goddess Miss
+              Kelly."
             />
-            <label for="rad3">Privileges Revoked</label>
-          </div>
+            <label for="rad3">Granted</label>
+          </button>
+        </div>
+        <!-- End of Flex frame for RadioButtons -->
 
-          <br /><br />
+        <br />
+        <br />
 
-          <div class="form-group">
-            <label for="Period">For How Long: </label>
+        <div class="form-group">
+          <label for="Period">For How Long: </label>
 
-            <select class="period" name="For" id="period" size="1">
-              <option value="Until Further Notice">Until Further Notice</option>
-              <option value="1 Day">1 Day</option>
-              <option value="2 Days">2 Days</option>
-              <option value="3 Days">3 Days</option>
-              <option value="4 Days">4 Days</option>
-              <option value="5 Days">5 Days</option>
-              <option value="6 Days">6 Days</option>
-              <option value="1 Week">1 Week</option>
-              <option value="2 Weeks">2 Weeks</option>
-            </select>
-          </div>
+          <select class="period" name="For" id="period" size="1">
+            <option value="Until Further Notice">Until Further Notice</option>
+            <option value="1 Day">1 Day</option>
+            <option value="2 Days">2 Days</option>
+            <option value="3 Days">3 Days</option>
+            <option value="4 Days">4 Days</option>
+            <option value="5 Days">5 Days</option>
+            <option value="6 Days">6 Days</option>
+            <option value="1 Week">1 Week</option>
+            <option value="2 Weeks">2 Weeks</option>
+          </select>
+        </div>
 
+        <br />
+
+        <div class="form-group">
+          <label for="instructions">Goddess Miss Kelly's Instructions</label>
           <br />
+          <textarea
+            class="textarea"
+            id="instructions"
+            name="Additional Instructions from your Goddess"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+        <div class="form">
+          <input class="emailbutton" type="submit" value="E-Mail slippers" />
+        </div>
 
-          <div class="form-group">
-            <label for="instructions">Goddess Miss Kelly's Instructions</label>
-            <br />
-            <textarea
-              class="textarea"
-              id="instructions"
-              name="Additional Instructions from your Goddess"
-              rows="4"
-              cols="50"
-            ></textarea>
-          </div>
-
-          <br />
-          <div class="form">
-            <input class="button" type="submit" value="E-Mail slippers" />
-          </div>
-
-          <div>
-            <label class="version" for="Version">V1.1</label>
-          </div>
-
-          <br /><br /><br />
-        </form>
-      </div>
-    </section>
+        <div>
+          <label class="version" for="Version">V2.0</label>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
