@@ -10,12 +10,13 @@
   margin-top: 4%;
   margin-right: 4%;
   border: solid;
-  background-color: rgb(207, 7, 207);
+  background-color: rgb(243, 16, 24);
   border-color: black;
 }
 
 .h1style {
   margin-left: 2%;
+  text-align: ;
 }
 
 .h2style {
@@ -63,7 +64,7 @@ label {
 }
 
 .textarea {
-  background-color: antiquewhite;
+  background-color: rgb(244, 219, 219);
   resize: none;
   width: 98%;
   height: auto;
