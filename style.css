@@ -10,7 +10,7 @@
   margin-top: 4%;
   margin-right: 4%;
   border: solid;
-  background-color: rgb(234, 47, 166);
+  background-color: rgb(251, 122, 239);
   border-color: black;
 }
 
@@ -64,7 +64,7 @@ label {
 }
 
 .textarea {
-  background-color: rgb(244, 219, 219);
+  background-color: rgba(235, 232, 232, 0.972);
   resize: none;
   width: 98%;
   height: auto;
