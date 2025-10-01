@@ -34,10 +34,6 @@
         />
 
         <!-- *************** Start of Panty section *************************-->
-        <!-- div class="headers">
-          <h1 class="h1style">Panty Wear Command</h1>
-          <h2 class="h2style">Authorisation</h2>
-        </div -->
 
         <!-- start of panty Flex frame 1 for images -->
         <div class="panty-gallery">
@@ -63,6 +59,7 @@
               name="Panty Message from your Goddess"
               id="rad10"
               value="Victoria Secrets Panty Wear privileges have been granted by Goddess Miss Kelly."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad10').value;"
             />
             <label for="rad10">Granted</label>
           </button>
@@ -72,7 +69,8 @@
               type="radio"
               name="Panty Message from your Goddess"
               id="rad11"
-              value="All panty wearing Privileges have been revoked by Goddess Miss Kelly"
+              value="All panty wearing Privileges have been revoked by Goddess Miss Kelly."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad11').value;"
             />
             <label for="rad11">Revoked</label>
           </button>
@@ -98,7 +96,13 @@
         <div class="form-group">
           <label for="Period">Panty Duration: </label>
 
-          <select class="period" name="For Panties" id="period" size="1">
+          <select
+            class="period"
+            name="For Panties"
+            id="period"
+            size="1"
+            onchange="document.getElementById('preview2').value = 'Period: ' + document.getElementById('period').value;"
+          >
             <option value="Until Further Notice">Until Further Notice</option>
             <option value="1 Hour">1 Hour</option>
             <option value="2 Hours">2 Hours</option>
@@ -111,15 +115,11 @@
           </select>
         </div>
         <!-- End  of Panty duration control -->
+
         <br />
         <hr />
 
         <!-- *************** Start of GMK Instruction section *************************-->
-        <!-- div class="headers">
-          <h1 class="h1style">GMK Instructions</h1>
-          <h2 class="h2style"></h2>
-        </div -->
-        <br />
 
         <div class="form-group">
           <label for="instructions">Comments from your Goddess</label>
@@ -128,11 +128,22 @@
             id="instructions"
             name="Additional Instructions from your Goddess"
             rows="4"
-            cols="50"
           ></textarea>
+          <br />
+          <br />
+          <textarea
+            readonly
+            class="emaipreview"
+            id="preview1"
+            name="preview1"
+            rows="3"
+          ></textarea>
+
+          <textarea readonly class="emaipreview" id="preview2" name="" rows="1">
+Period: Until Further Notice</textarea
+          >
         </div>
         <!-- *************** End of GMK Instruction section *************************-->
-        <br />
 
         <div style="text-align: center" class="form">
           <input class="emailbutton" type="submit" value="Send" />

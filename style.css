@@ -75,11 +75,19 @@ label {
   font-size: 18px;
 }
 
+.emaipreview {
+  border-color: bisque;
+  resize: none;
+  width: 98%;
+  height: auto;
+  font-size: 14px;
+}
+
 .emailbutton {
   color: white;
   background-color: black;
   border-radius: 8px;
-  padding: 11px;
+  padding: 12px;
   font-size: 24px;
   /* margin-right: 20%; */
 }
