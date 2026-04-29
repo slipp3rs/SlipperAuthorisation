@@ -38,15 +38,15 @@
         <!-- start of panty Flex frame 1 for images -->
         <div class="panty-gallery">
           <button type="button" class="button">
-            <img src="images/VSP.png" alt="" />
-          </button>
-
-          <button type="button" class="button">
-            <img src="images/Revoked2.png" alt="" />
+            <img src="images/LadiesBriefs.jpg" alt="" />
           </button>
 
           <button type="button" class="button">
             <img src="images/FutureUse1.png" alt="" />
+          </button>
+
+          <button type="button" class="button">
+            <img src="images/Revoked2.png" alt="" />
           </button>
         </div>
         <!-- End of panty Flex frame for 1 images -->
@@ -58,7 +58,7 @@
               type="radio"
               name="Panty Message from your Goddess"
               id="rad10"
-              value="Victoria Secrets Panty Wear privileges have been granted by Goddess Miss Kelly."
+              value="Panty privileges have been granted by Goddess Miss Kelly."
               onchange="document.getElementById('preview1').value = document.getElementById('rad10').value;"
             />
             <label for="rad10">Granted</label>
@@ -67,51 +67,71 @@
           <button type="button" class="button">
             <input
               type="radio"
+              disabled
               name="Panty Message from your Goddess"
               id="rad11"
-              value="All panty wearing Privileges have been revoked by Goddess Miss Kelly."
+              value=""
               onchange="document.getElementById('preview1').value = document.getElementById('rad11').value;"
             />
-            <label for="rad11">Revoked</label>
+            <label style="color: rgb(197, 208, 210)" for="rad11">Future Use</label>
           </button>
 
           <button type="button" class="button">
             <input
               type="radio"
-              disabled
               name="Panty Message from your Goddess"
               id="rad12"
-              value="Future Use Message"
+              value="Panty privileges have been revoked by Goddess Miss Kelly."
+              onchange="document.getElementById('preview1').value = document.getElementById('rad12').value;"
             />
-            <label style="color: rgb(197, 208, 210)" for="rad12"
-              >Future Use</label
+            <label for="rad12"
+              >Revoked</label
             >
           </button>
         </div>
         <!-- End of panty Flex frame 1 for RadioButtons -->
-        <br />
-        <br />
 
-        <!-- start of Panty duration control -->
+        <!-- start of Panty colour control 1 -->
         <div class="form-group">
-          <label for="Period">Panty Duration: </label>
+          <label for="PantyColour">Colour: </label>
 
           <select
             class="period"
-            name="For Panties"
-            id="period"
+            name="PantyColour"
+            id="PantyColour"
             size="1"
-            onchange="document.getElementById('preview2').value = 'Period: ' + document.getElementById('period').value;"
+            onchange="document.getElementById('preview2').value = 'Colour: ' + document.getElementById('PantyColour').value;"
           >
-            <option value="Until Further Notice">Until Further Notice</option>
-            <option value="1 Hour">1 Hour</option>
-            <option value="2 Hours">2 Hours</option>
-            <option value="3 Hours">3 Hours</option>
-            <option value="4 Hours">4 Hours</option>
-            <option value="5 Hours">5 Hours</option>
-            <option value="6 Hours">6 Hours</option>
-            <option value="1 Day">1 Day</option>
-            <option value="2 Days">2 Days</option>
+            <option value="slave choice">slave choice</option>
+            <option value="Black">Black</option>
+            <option value="Purple">Purple</option>
+            <option value="Blue">Blue</option>
+            <option value="Khaki">Khaki</option>
+            <option value="White">White</option>
+            <option value="Pink">Pink</option>
+          </select>
+        </div>
+        <!-- End  of Panty colour control 1 -->
+
+        <!-- start of Panty duration control -->
+        <div class="form-group">
+          <label for="Duration">Duration: </label>
+
+          <select
+            class="period"
+            name="PantyDuration"
+            id="PantyDuration"
+            size="1"
+            onchange="document.getElementById('preview3').value = 'Duration: ' + document.getElementById('PantyDuration').value;"
+          >
+            <option value="Until further notice">Until further notice</option>
+            <option value=" 1 Day ">1 Day</option>
+            <option value=" 2 Days ">2 Days</option>
+            <option value=" 3 Days ">3 Days</option>
+            <option value=" 4 Days ">4 Days</option>
+            <option value=" 5 Days ">5 Days</option>
+            <option value=" 6 Days ">6 Days</option>
+            <option value=" 1 Week ">1 Week</option>
           </select>
         </div>
         <!-- End  of Panty duration control -->
@@ -136,11 +156,24 @@
             class="emaipreview"
             id="preview1"
             name="preview1"
-            rows="3"
+            rows="1"
           ></textarea>
 
-          <textarea readonly class="emaipreview" id="preview2" name="" rows="1">
-Period: Until Further Notice</textarea
+          <textarea
+            readonly
+            class="emaipreview"
+            id="preview2"
+            name="preview2"
+            rows="1">
+Colour: slave choice</textarea>
+
+          <textarea 
+          readonly 
+          class="emaipreview" 
+          id="preview3" 
+          name="preview3" 
+          rows="1">
+Duration: Until Further Notice</textarea
           >
         </div>
         <!-- *************** End of GMK Instruction section *************************-->
