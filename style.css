@@ -34,8 +34,13 @@
 
 
 
-.period {
-  width: 18%;
+.SDperiod {
+  width: 50%;
+  font-size: medium;
+  background-color: rgb(235, 189, 220);
+  border: solid black;
+  border-radius: 20px;
+  text-align: center;
 }
 
 
@@ -74,6 +79,7 @@ label {
 }
 
 .period {
+  width: 18%;
   font-size: medium;
   background-color: rgb(235, 189, 220);
   border: solid black;
@@ -121,5 +127,5 @@ label {
 }
 
 .Reset {
-  width: 35%;
+  width: 36%;
 }
