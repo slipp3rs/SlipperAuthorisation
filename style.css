@@ -32,6 +32,13 @@
   border: 20px black;
 }
 
+
+
+.period {
+  width: 18%;
+}
+
+
 .container {
   width: 100%;
   margin: auto;
@@ -104,4 +111,8 @@ label {
   border-radius: 8px;
   border-color: black;
   color: black;
+}
+
+.Reset {
+  width: 35%;
 }
