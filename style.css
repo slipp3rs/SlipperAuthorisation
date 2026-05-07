@@ -127,5 +127,10 @@ label {
 }
 
 .Reset {
+  margin-left: 10%;
+  background-color: rgb(251, 122, 239); 
+  color: black;
+  border-radius: 8px; font-size: medium; 
+  border: solid;
   width: 36%;
 }
